@@ -1,0 +1,38 @@
+=== CAMPUS SHOP INVENTORY MANAGEMENT SYSTEM ===
+
+--- Independence check ---
+Exercise Book (96 pages) price: UGX 2500.0
+Blue Ballpoint Pen price: UGX 500.0
+Changing one object does not affect the others (see updates below).
+
+--- INITIAL STOCK ---
++------+---------------------------+-------------+--------------+-------+
+| ID   | Name                      | Category    |  Price (UGX) | Stock |
++------+---------------------------+-------------+--------------+-------+
+| P001 | Exercise Book (96 pages)  | Stationery  |     2,500.00 |   200 |
+| P002 | Blue Ballpoint Pen        | Stationery  |       500.00 |   350 |
+| P003 | Printing Paper (A4 Ream)  | Printing    |    18,000.00 |    40 |
+| P004 | Flash Disk 32GB           | Electronics |    35,000.00 |    25 |
+| P005 | Scientific Calculator     | Electronics |    45,000.00 |    15 |
++------+---------------------------+-------------+--------------+-------+
+
+--- UPDATING PRODUCTS ---
+Updated price of Exercise Book (96 pages) to UGX 3,000
+Updated stock of Flash Disk 32GB to 18 units
+
+--- UPDATED STOCK ---
++------+---------------------------+-------------+--------------+-------+
+| ID   | Name                      | Category    |  Price (UGX) | Stock |
++------+---------------------------+-------------+--------------+-------+
+| P001 | Exercise Book (96 pages)  | Stationery  |     3,000.00 |   200 |
+| P002 | Blue Ballpoint Pen        | Stationery  |       500.00 |   350 |
+| P003 | Printing Paper (A4 Ream)  | Printing    |    18,000.00 |    40 |
+| P004 | Flash Disk 32GB           | Electronics |    35,000.00 |    18 |
+| P005 | Scientific Calculator     | Electronics |    45,000.00 |    15 |
++------+---------------------------+-------------+--------------+-------+
+
+--- VALIDATION DEMONSTRATION ---
+Rejected: Invalid price: -100.0. Price cannot be negative.
+Rejected: Invalid quantity: -5. Stock cannot be negative.
+Pen price is still UGX 500.0
+Paper stock is still 40 reams
